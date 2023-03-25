@@ -1,0 +1,530 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,700;1,200;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,700;1,200;1,600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #183b56;
+    --secondary-color: #577592;
+    --accent-color: #2294ed;
+    --accent-color-dark: #1d69a3;
+    --padding-ilnilne-section: 20px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary-color);
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    color: var(--secondary-color);
+    line-height: 1.8rem;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Utility classess */
+.small-bold-text {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.container {
+    max-width: 1180px;
+    margin-inline: auto;
+    padding-inline: var(--padding-ilnilne-section);
+}
+
+
+/* --------------------------------------------------top banner CSS--------------------------------------------------- */
+.bannertext {
+    cursor: pointer;
+    color: #fff;
+    padding: 15px 30px;
+    text-align: center;
+}
+
+.top-banner {
+    background-color: #e74694;
+    background-image: url(images/asset\ 32.png);
+    /* background-position:c; */
+    background-repeat: repeat;
+    background-size: 300px;
+
+}
+/* --------------------------------------------------NAV BAR CSS--------------------------------------------------- */
+
+.navbar {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-toogle
+{
+    display: none;
+}
+/* nav bar */
+.logo {
+    width: 168px;
+    cursor: pointer;
+}
+
+.navmenuItems ul li {
+    display: inline-block;
+    padding: 0 10px;
+
+}
+
+.navmenuItems ul li a {
+    color: #3e5b72;
+    padding-left: 2rem;
+    transition: 0.5s all ease-in-out;
+
+}
+
+.navmenuItems ul li :hover {
+    color: #2294ed;
+}
+
+
+.SigninBtn,
+.SignUpBtn {
+    margin-left: 20px;
+}
+
+.Secondarybtn {
+    background: transparent;
+    padding: 10px 20px;
+    border: 1px solid #cad9eb;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #3e5b72;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+    
+}
+.Secondarybtn:hover
+{
+    color: #2294ed;
+    border: 1px solid  #2294ed;
+}
+
+/* header */
+/* --------------------------------------------------hERO sECTION CSS--------------------------------------------------- */
+
+.hero-section
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3.5rem;
+}
+.hero-section-img
+{
+    max-width: 40vw;
+}
+.content-left
+{
+    line-height: 5rem;
+    margin-top: 5rem;
+    max-width: 40vw;
+}
+.content-left h1
+{
+    font-weight: 600;    
+}
+.content-left p 
+{
+        width: 28.3rem;
+}
+.PrimaryColoredBtn
+{
+    background: #2294ed;
+    padding: 10px 20px;
+    border: 1px solid #2294ed;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;   
+}
+.PrimaryColoredBtn:hover
+{
+    background-color:#1d69a3;
+
+}
+/* Companies Section--------------- */
+/* --------------------------------------------------Companies Section CSS--------------------------------------------------- */
+
+.comapnies-text 
+{
+    margin-block: 2.5rem;
+    /* margin-left: 6rem; */
+    text-align: center;
+}
+.comapnies-text p
+{
+    font-size: 1.1rem;
+}
+.companies-logo
+{
+    display: flex;
+    justify-content: space-between;
+    /* padding: 0 2rem; */
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+.comp-logo
+{
+    height: 46px;
+    /* width: 120; */
+}
+.godadaylogo
+{
+    width: 9rem;
+}
+
+
+/* features */
+/* --------------------------------------------------Features Section CSS--------------------------------------------------- */
+
+.features
+{
+    background-image: url(./images/asset\ 34.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 41rem;
+    
+}
+.features-heading
+{
+    text-align: center;
+  
+}
+.features-area
+{
+    display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   margin-top: 3rem;
+
+}
+.feature-card
+{
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+    align-items: center;
+    max-width: 30%;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 1.5rem;
+
+}
+.feature-card img
+{
+    width: 3rem;
+}
+
+/* big features */
+/* --------------------------------------------------Big Features Section CSS--------------------------------------------------- */
+
+.BigFeatures
+{
+    margin: 6rem 2rem;
+}
+.bigFeature1
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 90%;
+    gap: 100px;
+}
+.ChartMughal
+{
+    padding: 20px 0;
+    font-size: 1.2rem;
+    /* font-family: sans-serif; */
+}
+.bigFeature1 .personInfo
+{
+    margin-top: 1rem;
+    display: flex; 
+    /* justify-content: space-between; */
+    align-items: center;
+     
+}
+.bigFeature1 .personInfo .personInfoText p
+{
+    /* margin-left: 1rem; */
+    font-size: 14px;
+}
+.bigFeature1 .personInfo .personInfoText
+{
+    margin: 3px 10px ;
+}
+
+.bigFeature1 .personInfo img
+{
+    width: 3rem;
+    /* margin-left: 1rem; */
+}
+
+.bigFeature1 .rightside
+{
+    margin-left: 4rem;
+}
+.bigFeature1 .leftside img
+{
+    width: 500px;
+}
+.rightside .small-bold-text 
+{
+    color: #183b56;
+    font-weight: 500;
+}
+.rightside .para
+{
+    color: #183b56;
+    background-image: url(./images/asset\ 35.svg);
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+}
+
+
+/* Examples Section*/
+/* --------------------------------------------------Example Section CSS--------------------------------------------------- */
+
+.example-cards
+{
+    width: 23%;
+    position: relative;
+    background-color: black;
+    background: linear-gradient(rgba(0,0,0,0.1) , rgba(0,0,0,0.8)) , url(./images/asset\ 36.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 300px;
+    /* padding-left: 30px; */
+    margin-top: 15px;
+    margin-left: 15px;
+    transition: 0.9s ;
+
+}
+
+.example-cards:hover
+{
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.8);
+}
+
+.cards-text
+{
+    position: absolute;
+   bottom: 20px;
+   left: 20px;
+   right: 20px;
+    color: white;
+    
+}
+.example-cards:nth-child(2)
+{
+   
+    background-color: black;
+    background: linear-gradient(rgba(0,0,0,0.1) , rgba(0,0,0,0.8)) , url(./images/asset\ 37.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 300px;
+}
+.example-cards:nth-child(3)
+{
+   
+    background-color: black;
+    background: linear-gradient(rgba(0,0,0,0.1) , rgba(0,0,0,0.8)) , url(./images/asset\ 38.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 300px;
+}.example-cards:nth-child(4)
+{
+   
+    background-color: black;
+    background: linear-gradient(rgba(0,0,0,0.1) , rgba(0,0,0,0.8)) , url(./images/asset\ 39.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 300px;
+}
+
+/* Learn more Section */
+/* --------------------------------------------------Learn more section CSS--------------------------------------------------- */
+
+.learnMoreSection
+{
+    margin-top: 3rem;
+    background-color: #183b54;
+    width: 100vw;
+    height: 50vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    
+}
+.leftSectionheader
+{
+    color: white;
+    font-weight: 400;
+   
+}
+.headingtext
+{
+    color: white;
+}
+.list 
+{
+    /* list-style: none; */
+    margin: 0;
+    padding: 10px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    color: #577592;
+    /* gap:  4px; */
+}
+  
+.list li
+{
+    width: 50%; /* Set the width to 50% for 2 items per row */
+}
+  
+.list li:nth-child(3n+1) 
+{
+    margin-right: auto; /* Push every 3rd item to the right */
+}
+   
+
+.learnMoreSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .leftSection {
+    flex-basis: 50%;
+  }
+  
+  .rightSection {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .rightSection img {
+    max-width: 100%;
+    height: auto;
+    width: 800px; /* Example width */
+    height: 600px; /* Example height */
+  }
+  .learnMoreBtn
+  {
+    margin-top: 50px;
+  }
+
+  /* cta */
+/* --------------------------------------------------call to action section CSS--------------------------------------------------- */
+
+  .ctasection
+  {
+    margin-block: 4rem 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    /* justify-content: space-between; */
+    align-items: center;
+    /* max-width: 10rem; */
+  }
+
+  /* foote section */
+/* --------------------------------------------------Footer Section CSS--------------------------------------------------- */
+
+  .footersection
+  {
+    background-color: #ebf2fa;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* margin-block: 2rem 2rem; */
+    padding: 2rem 2rem;
+  }
+  .footersection img
+  {
+    /* width: 100vw;
+    height: 50vw; */
+    width: 10rem;
+    /* margin-block: 1rem 2rem; */
+  }
+  .linkcolumns a
+  {
+
+    display: flex;
+    flex-direction: column;
+    margin-block: 1rem 1rem;
+    color: #577592;
+    transition: 0.4s;
+  }
+  .linkcolumns a:hover
+  {
+    color: #2294ed;
+  }
+
+  /* subfoter */
+/* -------------------------------------------------Sub Footer CSS--------------------------------------------------- */
+
+  .subfooter
+  {
+    background-color: #b9cde4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 4rem;
+    /* padding: 10px 10px; */
+  }
+.subfooter a
+{
+   font-size: 1rem;
+   padding-left: 2rem;
+   color: black;
+}
+.subfooter a img
+{
+    width: 20px;
+}
+.subfooter a:hover
+{
+    color: #2294ed;
+}
+
+
+
+/* ------------------------------------------------------------------Responsive design---------------------------------- */
